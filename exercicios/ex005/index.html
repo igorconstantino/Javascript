@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: aqua;
+        }
+
+        h1{
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Aprendendo sobe o DOM</h1>
+    <p id="p1">Aqui está escrito um <strong>texto</strong>.</p>
+    <p class="paragrafo">Aqui está escrito um outro texto diferente.</p>
+    
+    <script>
+
+        var p = document.getElementById('p1')
+        p.style.backgroundColor = 'red'
+        p.innerHTML = 'Mudei tudooo!!!'
+
+        var p2 = document.querySelector('p.paragrafo')
+        p2.style.fontSize = '23px'
+        p2.innerHTML = '<strong>Mudei</strong> aqui também.'
+        
+    </script>
+
+</body>
+</html>
