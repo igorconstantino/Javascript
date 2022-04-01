@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function Pessoa(){
+            this.nome
+            this.idade
+            this.printNomeIdade = function(){
+                console.log(`O nome é ${this.nome} e sua idade é ${this.idade}.`)
+            }
+        }
+
+        var p = new Pessoa()
+
+        p.nome = 'Igor'
+        p.idade = 20
+
+        p.printNomeIdade()
+
+
+        
+        function Animal(nome, peso){
+            this.nome = nome
+            this.peso = peso
+        }
+
+        var cachorro = new Animal('Bilu', ' 5Kg')
+
+        console.log(cachorro.nome + cachorro.peso)
+
+    </script>
+
+</body>
+</html>
