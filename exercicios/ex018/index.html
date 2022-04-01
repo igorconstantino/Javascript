@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .conteudo h2 span{
+            color: rgb(46, 77, 100);
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .conteudo p{
+            height: 30px;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+        .mostrar{
+            height: auto !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="conteudo">
+
+        <h2>Título do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, accusamus quidem. Eveniet, aperiam! Doloremque dolore ipsam repudiandae praesentium expedita dolor at maiores culpa facilis, quaerat perspiciatis, vero possimus quod reiciendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolor, nam animi velit quo id, cum nesciunt aliquam molestias iure beatae dicta vel doloribus corrupti aliquid nulla dolorum quod amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat error dolores quam dolorum accusamus saepe quisquam nulla veniam ad. Saepe rem aperiam iusto tempora fuga necessitatibus numquam incidunt eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dicta ratione sit similique cum praesentium obcaecati excepturi possimus veniam itaque rerum voluptatibus ipsam explicabo exercitationem sapiente laboriosam consectetur! Consequuntur, incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates architecto eos asperiores, ducimus iure reprehenderit quos fugit odit excepturi exercitationem eum et voluptate ad iste esse unde tenetur earum.</p>
+
+    </div>
+
+    <script>
+
+        var span = document.querySelector('.conteudo span')
+        var conteudo = document.querySelector('.conteudo p')
+
+        span.addEventListener('click', function(){
+            if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'Ver mais!'
+                conteudo.classList.remove('mostrar')
+            }else{
+                span.innerHTML = 'Ocultar'
+                conteudo.classList.add('mostrar')
+            }
+        })
+
+    </script>
+
+</body>
+</html>
