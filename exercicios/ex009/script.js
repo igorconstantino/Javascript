@@ -6,7 +6,7 @@ function carregar(){
     var hora = new Date()
     var agora = hora.getHours()
 
-    // agora = 7
+    //agora = 7
     // agora = 14
     // agora = 22
 
